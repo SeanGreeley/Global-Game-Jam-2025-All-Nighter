@@ -22,7 +22,11 @@ func _process(delta):
 	if position.length() <= 80:
 		Global.bubbleHealth -= delta*0.5
 		if Global.bubbleHealth <= 0:
+			get_tree().call_group("Enemies", "die")
 			get_tree().change_scene_to_file("res://Scenes/YouDiedScene.tscn")
+
+func die():
+	queue_free()
 
 func hit():
 	health -= 1
