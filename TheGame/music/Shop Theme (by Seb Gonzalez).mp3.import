@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://4lqs5mstep0g"
+path="res://.godot/imported/Shop Theme (by Seb Gonzalez).mp3-d50ed3a6de3e088d139552f27847833e.mp3str"
+
+[deps]
+
+source_file="res://music/Shop Theme (by Seb Gonzalez).mp3"
+dest_files=["res://.godot/imported/Shop Theme (by Seb Gonzalez).mp3-d50ed3a6de3e088d139552f27847833e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
