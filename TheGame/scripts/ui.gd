@@ -1,7 +1,5 @@
 extends Control
 
-var waveFade = 1.0
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$WaveCount.text = "WAVE "+str(Global.roundCounter)
@@ -12,7 +10,7 @@ func _ready():
 	$Inv4/Count.text = "x"+str(Global.inventory[3])
 	$BossHealth.value = 100.0
 	$BubbleHealth.value = 100.0
-	
+	Global.newWaveFade = 1.0
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -25,7 +23,7 @@ func _process(delta):
 	$Inv4/Count.text = "x"+str(Global.inventory[3])
 	$BossHealth.value = 100.0
 	$BubbleHealth.value = 100.0
-	$NewWave.modulate = Color(1.0,1.0,1.0,1.0-abs(0.5-waveFade)*2)
-	$NewWave.scale = Vector2(1.0-waveFade*0.25,1.0-waveFade*0.25)
-	if waveFade > 0:
-		waveFade -= delta*0.5
+	$NewWave.modulate = Color(1.0,1.0,1.0,1.0-abs(0.5-Global.newWaveFade)*2)
+	$NewWave.scale = Vector2(1.0-Global.newWaveFade*0.25,1.0-Global.newWaveFade*0.25)
+	if Global.newWaveFade > 0:
+		Global.newWaveFade -= delta*0.5

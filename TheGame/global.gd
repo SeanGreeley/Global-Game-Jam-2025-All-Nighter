@@ -10,3 +10,4 @@ var shopOpen:bool = false
 var playerPosition:Vector2
 var hasAcid:bool = false
 var hasBoom:bool = false
+var newWaveFade:float = 1.0
