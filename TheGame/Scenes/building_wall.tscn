@@ -1,18 +1,18 @@
-[gd_scene load_steps=8 format=3 uid="uid://gpvm6hvdyrhn"]
+[gd_scene load_steps=8 format=3 uid="uid://bo4kenrmt00av"]
 
-[ext_resource type="Texture2D" uid="uid://2uvgtu6n4n78" path="res://assets/Building.png" id="1_yvgn8"]
-[ext_resource type="Script" path="res://scripts/building_scripts/building.gd" id="2_yxnqy"]
+[ext_resource type="Script" path="res://scripts/building_scripts/building.gd" id="1_mbuam"]
+[ext_resource type="Texture2D" uid="uid://2uvgtu6n4n78" path="res://assets/Building.png" id="2_pbgqo"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gy8cw"]
-atlas = ExtResource("1_yvgn8")
+atlas = ExtResource("2_pbgqo")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_v73jc"]
-atlas = ExtResource("1_yvgn8")
+atlas = ExtResource("2_pbgqo")
 region = Rect2(0, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1d8ib"]
-atlas = ExtResource("1_yvgn8")
+atlas = ExtResource("2_pbgqo")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kr3lf"]
@@ -36,7 +36,7 @@ animations = [{
 size = Vector2(40, 40)
 
 [node name="BuildingWall" type="Node2D"]
-script = ExtResource("2_yxnqy")
+script = ExtResource("1_mbuam")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
