@@ -4,8 +4,6 @@ extends Node2D
 @export var health: int;
 @export var speed: float;
 
-
-
 func _ready():
 	var Sprite = get_node("Sprite2D")
 	if sprite != null:
