@@ -30,3 +30,7 @@ func _on_area_2d_body_entered(body):
 		if body.health == 0:
 			body.queue_free()
 		hit()
+	if "isPlayer" in body:
+		Global.stunned = true
+	if "isBubble" in body:
+		pass
