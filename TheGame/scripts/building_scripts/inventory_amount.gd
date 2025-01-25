@@ -24,7 +24,8 @@ func _input(ev):
 		selectWall = 3
 		
 	#
-	if  ev is InputEventMouseButton and ev.button_index == MOUSE_BUTTON_RIGHT and Global.inventory[selectWall] > 0:
+	if  ev is InputEventMouseButton and ev.button_index == MOUSE_BUTTON_RIGHT and Global.inventory[selectWall] > 0 and !mouseButtonPressed:
+		mouseButtonPressed = true
 		var camera = get_viewport().get_camera_2d()
 		placePos = camera.get_global_mouse_position()
 		placeWall()
@@ -42,3 +43,5 @@ func placeWall():
 	newWall.type = selectWall
 	Global.inventory[selectWall] -= 1;
 	get_tree().root.add_child(newWall)
+	
+	mouseButtonPressed = false

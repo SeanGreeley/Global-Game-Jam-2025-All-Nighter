@@ -20,15 +20,15 @@ func hit():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if type != 4:
+	if type != 3:
 		health -= 10.0 * delta
 	if health <= 0:
 		queue_free()
 		
 		
 func _on_area_2d_body_entered(body):
-	if "isEnemy" in body and type != 4:
+	if "isEnemy" in body and type != 3:
 		hit()
-	if "isEnemy" in body and type == 4:
+	if "isEnemy" in body and type == 3:
 		body.health -= 1
 		hit()

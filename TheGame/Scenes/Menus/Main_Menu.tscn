@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/Main_Menu.gd" id="1_3r0gg"]
 [ext_resource type="Texture2D" uid="uid://chef6tmwb7rtm" path="res://assets/20250125_003332.jpg" id="2_qj7fy"]
-[ext_resource type="AudioStream" uid="uid://dh0bgkjl5la1e" path="res://music/Highway Focus.mp3" id="3_l4obo"]
+[ext_resource type="AudioStream" uid="uid://c4arary3bafpo" path="res://music/Highway Focus.mp3" id="3_l4obo"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -50,20 +50,35 @@ text = "Quit"
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 0.143
 anchor_right = 0.5
-anchor_bottom = 0.5
+anchor_bottom = 0.143
 offset_left = -184.0
-offset_top = -259.0
+offset_top = -27.664
 offset_right = 185.0
-offset_bottom = -204.0
+offset_bottom = 27.336
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 40
-text = "Bubble Swarmed"
+theme_override_font_sizes/font_size = 79
+text = "Operation Octo:
+"
 horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="Label"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.522
+anchor_top = 1.336
+anchor_right = 0.522
+anchor_bottom = 1.336
+offset_left = -183.942
+offset_top = -25.624
+offset_right = 187.058
+offset_bottom = 27.376
+theme_override_font_sizes/font_size = 38
+text = "Crack the Crabulous"
 
 [node name="AudioListener2D" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_l4obo")
