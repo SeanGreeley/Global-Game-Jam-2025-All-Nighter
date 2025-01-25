@@ -3,6 +3,7 @@ extends Node2D
 var health = 100
 var type = 0
 @export var isWall:bool = true
+@export var isUrchin:bool = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$AnimatedSprite2D.frame = type
@@ -14,6 +15,7 @@ func _ready():
 		health = 100
 	else:
 		health = 10
+		isUrchin = true
 
 func hit():
 	health -= 1
@@ -21,7 +23,7 @@ func hit():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if type != 3:
-		health -= 1.0 * delta
+		health -= 2.0 * delta
 	if health <= 0:
 		queue_free()
 		
