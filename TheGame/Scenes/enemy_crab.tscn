@@ -11,5 +11,6 @@ script = ExtResource("1_3vhjj")
 shape = SubResource("RectangleShape2D_5mh6e")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+path_postprocessing = 1
 
 [connection signal="navigation_finished" from="NavigationAgent2D" to="." method="_on_navigation_agent_2d_navigation_finished"]
