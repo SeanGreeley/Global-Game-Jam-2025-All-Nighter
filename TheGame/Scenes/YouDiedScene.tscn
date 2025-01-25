@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://8na16ql2c5w4"]
+[gd_scene load_steps=4 format=3 uid="uid://8na16ql2c5w4"]
 
 [ext_resource type="Script" path="res://scripts/YouDiedScene.gd" id="1_84skg"]
 [ext_resource type="AudioStream" uid="uid://bc8bqaguu7x4u" path="res://music/Windy Wisps.mp3" id="2_ihj77"]
+[ext_resource type="Texture2D" uid="uid://c3bsrvwu8p4jv" path="res://assets/dead.png" id="3_vecq6"]
 
 [node name="YouDiedScene" type="Control"]
 layout_mode = 3
@@ -19,3 +20,8 @@ text = "You Died"
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("2_ihj77")
 autoplay = true
+
+[node name="Dead" type="Sprite2D" parent="."]
+position = Vector2(577.333, 323.5)
+scale = Vector2(0.758102, 0.758102)
+texture = ExtResource("3_vecq6")
