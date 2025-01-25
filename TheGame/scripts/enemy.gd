@@ -42,6 +42,8 @@ func _on_area_2d_body_entered(body):
 		hit()
 	if "isPlayer" in body:
 		Global.stunned = true
+	if "isWall" in body:
+		speed = 0
 	if "isBubble" in body:
 		pass
 
