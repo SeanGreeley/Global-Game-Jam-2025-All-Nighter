@@ -11,7 +11,14 @@ script = ExtResource("1_3vhjj")
 shape = SubResource("RectangleShape2D_5mh6e")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+target_desired_distance = 36.14
+path_max_distance = 500.0
 path_postprocessing = 1
 avoidance_enabled = true
+radius = 20.0
+max_neighbors = 50
+time_horizon_agents = 3.48
+avoidance_priority = 0.0
+debug_enabled = true
 
 [connection signal="navigation_finished" from="NavigationAgent2D" to="." method="_on_navigation_agent_2d_navigation_finished"]

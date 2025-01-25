@@ -7,7 +7,7 @@ var parent: RigidBody2D;
 var loaded = false;
 
 func _ready():
-	nav.target_position = Vector2(0,0)
+	nav.target_position = Vector2(0 + randf_range(-20, 20),0 + randf_range(-20, 20))
 	parent = get_parent()
 
 func _physics_process(delta):
