@@ -7,3 +7,4 @@ var coinCounter:int = 0
 var inventory:Array = [0,0,0,0]
 var stunned:bool = false
 var shopOpen:bool = false
+var playerPositioin:Vector2
