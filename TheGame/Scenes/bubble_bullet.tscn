@@ -1,20 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://sl88cljk0cwc"]
+[gd_scene load_steps=5 format=3 uid="uid://sl88cljk0cwc"]
 
 [ext_resource type="Script" path="res://scripts/bubble_bullet.gd" id="1_2eica"]
-[ext_resource type="Texture2D" uid="uid://cmawnaf3kqd8h" path="res://assets/New Piskel.png" id="1_6jj03"]
+[ext_resource type="SpriteFrames" uid="uid://qylysvwefjeh" path="res://animation/bubblebounce.tres" id="2_ch5pi"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_awq0v"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_btxkl"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("1_6jj03")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_omhqe"]
 radius = 15.0333
@@ -25,7 +14,7 @@ gravity_scale = 0.0
 script = ExtResource("1_2eica")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_btxkl")
+sprite_frames = ExtResource("2_ch5pi")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_omhqe")
