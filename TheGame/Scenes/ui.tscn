@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://cqlx2w5c5f3d8"]
+[gd_scene load_steps=9 format=3 uid="uid://cqlx2w5c5f3d8"]
 
+[ext_resource type="Script" path="res://scripts/ui.gd" id="1_6kpgc"]
 [ext_resource type="Texture2D" uid="uid://c7fcihiuhj8wd" path="res://assets/icon.svg" id="1_easf5"]
 [ext_resource type="Texture2D" uid="uid://cylaav1i33wph" path="res://assets/CoinIcon.png" id="1_u2ply"]
 
@@ -53,6 +54,7 @@ corner_radius_bottom_left = 15
 [node name="UI" type="Control"]
 layout_mode = 3
 anchors_preset = 0
+script = ExtResource("1_6kpgc")
 
 [node name="WaveCount" type="Label" parent="."]
 layout_mode = 0

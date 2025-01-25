@@ -1,7 +1,7 @@
 extends Node2D
 
 @export var isBoss: bool = true;
-@export var player: CharacterBody2D;
+var player: CharacterBody2D = Global.
 @export var parent: Node2D;#important for scoping issues
 var nottarget = Vector2(0,0)
 var target: Vector2;
