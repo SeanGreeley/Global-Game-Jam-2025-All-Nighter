@@ -1,9 +1,13 @@
 extends Node2D
 
+@export var sprite: Texture;
 
-# Called when the node enters the scene tree for the first time.
+
+
 func _ready():
-	pass # Replace with function body.
+	var Sprite = get_node("Sprite2D")
+	if sprite != null:
+		Sprite.set_texture(sprite)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

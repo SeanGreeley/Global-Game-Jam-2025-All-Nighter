@@ -1,6 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://botwj6m1vpymn"]
+[gd_scene load_steps=3 format=3 uid="uid://botwj6m1vpymn"]
 
-[ext_resource type="Script" path="res://scripts/enemy.gd" id="1_socmf"]
+[ext_resource type="Script" path="res://scripts/enemy_base.gd" id="1_socmf"]
 
-[node name="Enemy" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cki2b"]
+
+[node name="Enemy" type="RigidBody2D"]
+gravity_scale = 0.0
 script = ExtResource("1_socmf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_cki2b")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
