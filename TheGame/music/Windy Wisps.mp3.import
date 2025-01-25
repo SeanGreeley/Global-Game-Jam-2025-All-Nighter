@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bc8bqaguu7x4u"
+path="res://.godot/imported/Windy Wisps.mp3-fba76f3000947b9a279c0a16cd650b5e.mp3str"
+
+[deps]
+
+source_file="res://music/Windy Wisps.mp3"
+dest_files=["res://.godot/imported/Windy Wisps.mp3-fba76f3000947b9a279c0a16cd650b5e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
