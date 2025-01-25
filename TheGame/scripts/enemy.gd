@@ -3,6 +3,7 @@ extends Node2D
 @export var assignedSprite: Texture;
 @export var health: int;
 @export var speed: float = 250;
+@export var isEnemy:bool = true;
 
 func _ready():
 	var Sprite = get_node("Sprite2D")
