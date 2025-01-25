@@ -1,5 +1,6 @@
 extends Node2D
 
+@export var isBoss: bool = true;
 @export var player: CharacterBody2D;
 @export var parent: Node2D;#important for scoping issues
 var nottarget = Vector2(0,0)

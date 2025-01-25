@@ -8,6 +8,9 @@ func _ready():
 	var Sprite = get_node("Sprite2D")
 	if assignedSprite != null:
 		Sprite.set_texture(assignedSprite)
+	var child = get_child(2)
+	if "isBoss" in child:
+		health = 50
 	add_to_group("Enemies")
 
 func hit():
