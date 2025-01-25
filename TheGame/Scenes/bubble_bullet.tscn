@@ -1,34 +1,31 @@
-<<<<<<< HEAD
-[gd_scene load_steps=6 format=3 uid="uid://c3o7slqt71c1j"]
-=======
-[gd_scene load_steps=4 format=3 uid="uid://do3rcybbxqxi6"]
->>>>>>> ebc5334745f7e134fe358d02ba9141a4ac3f9e25
+[gd_scene load_steps=6 format=3 uid="uid://sl88cljk0cwc"]
 
-[ext_resource type="Script" path="res://Scenes/bubble_bullet.gd" id="1_s73yq"]
-[ext_resource type="SpriteFrames" uid="uid://qylysvwefjeh" path="res://animation/bubblebounce.tres" id="2_g78ro"]
+[ext_resource type="Script" path="res://scripts/bubble_bullet.gd" id="1_2eica"]
+[ext_resource type="Texture2D" uid="uid://cmawnaf3kqd8h" path="res://assets/New Piskel.png" id="1_6jj03"]
 
-[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_4ukfd"]
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_awq0v"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_cd6bv"]
-radius = 22.0227
+[sub_resource type="SpriteFrames" id="SpriteFrames_btxkl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6jj03")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
-[sub_resource type="AnimatedTexture" id="AnimatedTexture_jc83x"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_omhqe"]
+radius = 15.0333
 
 [node name="BubbleBullet" type="RigidBody2D"]
-physics_material_override = SubResource("PhysicsMaterial_4ukfd")
+physics_material_override = SubResource("PhysicsMaterial_awq0v")
 gravity_scale = 0.0
-script = ExtResource("1_s73yq")
-
-[node name="Collide" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_cd6bv")
+script = ExtResource("1_2eica")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-texture_filter = 1
-position = Vector2(1.43051e-06, 9.53674e-07)
-scale = Vector2(1.3125, 1.4375)
-sprite_frames = ExtResource("2_g78ro")
-frame_progress = 0.968307
+sprite_frames = SubResource("SpriteFrames_btxkl")
 
-[node name="NewPiskel" type="Sprite2D" parent="."]
-position = Vector2(156, -7)
-texture = SubResource("AnimatedTexture_jc83x")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_omhqe")

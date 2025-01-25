@@ -14,11 +14,11 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	mousePos = get_viewport().get_mouse_position()
-	if get_parent():
+	if "rotation" in get_parent():
 		parentRotation = get_parent().rotation
 	rotation = atan2(viewSize.y/2.0-mousePos.y,viewSize.x/2.0-mousePos.x) + PI - parentRotation
 	if Input.is_action_just_pressed("shoot"):
 		var newBullet = bullet.instantiate()
-		newBullet.global_transform = $Tip.global_transform
-		newBullet.linear_velocity = Vector2(cos(rotation),sin(rotation)) * 1000.0
-		get_parent().add_child(newBullet)
+		newBullet.global_transform = $Tip.get_global_transform()
+		newBullet.linear_velocity = Vector2(cos(rotation+parentRotation),sin(rotation+parentRotation)) * 1000.0
+		get_tree().root.add_child(newBullet)

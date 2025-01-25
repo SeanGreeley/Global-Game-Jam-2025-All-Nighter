@@ -1,22 +1,21 @@
-[gd_scene load_steps=5 format=3 uid="uid://h3fgvc68vix4"]
+[gd_scene load_steps=5 format=3 uid="uid://cx6mo7pmyge6f"]
 
-[ext_resource type="Script" path="res://scripts/Player.gd" id="1_4df4r"]
-[ext_resource type="Texture2D" uid="uid://c7fcihiuhj8wd" path="res://assets/icon.svg" id="2_f3kpn"]
-[ext_resource type="PackedScene" uid="uid://bqvgqwqij5gig" path="res://Scenes/bubble_gun.tscn" id="3_yw7de"]
+[ext_resource type="Script" path="res://scripts/Player.gd" id="1_61e8j"]
+[ext_resource type="Texture2D" uid="uid://c7fcihiuhj8wd" path="res://assets/icon.svg" id="2_r5f46"]
+[ext_resource type="PackedScene" uid="uid://b8sqej0stu5ui" path="res://Scenes/bubble_gun.tscn" id="3_8cwx2"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_inwe6"]
-radius = 78.0064
+[sub_resource type="CircleShape2D" id="CircleShape2D_441j0"]
+radius = 66.0
 
-[node name="Player2D" type="CharacterBody2D"]
-script = ExtResource("1_4df4r")
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_61e8j")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_f3kpn")
+texture = ExtResource("2_r5f46")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_inwe6")
+shape = SubResource("CircleShape2D_441j0")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
-[node name="BubbleGun" parent="." instance=ExtResource("3_yw7de")]
-position = Vector2(0, 2)
+[node name="BubbleGun" parent="." instance=ExtResource("3_8cwx2")]
