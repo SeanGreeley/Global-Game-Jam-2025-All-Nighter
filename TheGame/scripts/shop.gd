@@ -30,30 +30,36 @@ func _process(delta):
 
 
 func _on_buy_wood_pressed():
-	Global.inventory[2] += 1
-	Global.coinCounter -= 5
+	if Global.coinCounter >= 5:
+		Global.inventory[2] += 1
+		Global.coinCounter -= 5
 
 
 func _on_buy_stone_pressed():
-	Global.inventory[1] += 1
-	Global.coinCounter -= 10
+	if Global.coinCounter >= 10:
+		Global.inventory[1] += 1
+		Global.coinCounter -= 10
 
 func _on_buy_coral_pressed():
-	Global.inventory[0] += 1
-	Global.coinCounter -= 15
+	if Global.coinCounter >= 15:
+		Global.inventory[0] += 1
+		Global.coinCounter -= 15
 
 
 func _on_buy_urchin_pressed():
-	Global.inventory[3] += 1
-	Global.coinCounter -= 20
+	if Global.coinCounter >= 20:
+		Global.inventory[3] += 1
+		Global.coinCounter -= 20
 
 
 func _on_buy_acid_pressed():
-	Global.coinCounter -= 25
-	Global.hasAcid = true
-	$BuyAcid.visible = false
+	if Global.coinCounter >= 25:
+		Global.coinCounter -= 25
+		Global.hasAcid = true
+		$BuyAcid.visible = false
 
 func _on_buy_boom_pressed():
-	Global.coinCounter -= 30
-	Global.hasBoom = true
-	$BuyBoom.visible = false
+	if Global.coinCounter >= 30:
+		Global.coinCounter -= 30
+		Global.hasBoom = true
+		$BuyBoom.visible = false

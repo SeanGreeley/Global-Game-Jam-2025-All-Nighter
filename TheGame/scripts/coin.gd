@@ -13,5 +13,5 @@ func _process(delta):
 
 func _on_body_entered(body):
 	if "Player" in body:
-		Global.coinCounter += 1
+		Global.coinCounter += 2
 		queue_free()
