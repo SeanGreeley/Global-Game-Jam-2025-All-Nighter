@@ -4,7 +4,7 @@ extends CharacterBody2D
 
 
 const speed = 500.0
-var rotation_speed = 5.0
+var rotation_speed = 3.5
 
 # Function to simulate action remapping
 func handle_action_remapping():
