@@ -8632,6 +8632,6 @@ layer_1/tile_data = PackedInt32Array(-1048590, 1048578, 29, -983054, 589826, 30,
 position = Vector2(590, 551)
 
 [node name="Player" parent="." instance=ExtResource("4_mvgp6")]
-position = Vector2(1, -2)
+position = Vector2(2, 73)
 
 [editable path="RichardTestScene"]
