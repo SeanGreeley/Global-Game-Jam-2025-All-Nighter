@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://t1l004b3pecg" path="res://assets/bubble.png" id="1_8ub3o"]
 [ext_resource type="Script" path="res://scripts/shop.gd" id="1_jc7ss"]
 
-[node name="Shop" type="CanvasLayer"]
+[node name="Shop" type="Node2D"]
 script = ExtResource("1_jc7ss")
 
 [node name="BuyWood" type="TextureButton" parent="."]
@@ -11,6 +11,7 @@ offset_left = 122.0
 offset_top = 66.0
 offset_right = 372.0
 offset_bottom = 316.0
+pivot_offset = Vector2(125, 125)
 texture_normal = ExtResource("1_8ub3o")
 ignore_texture_size = true
 stretch_mode = 0
@@ -33,6 +34,7 @@ offset_left = 424.0
 offset_top = 38.0
 offset_right = 674.0
 offset_bottom = 288.0
+pivot_offset = Vector2(125, 125)
 texture_normal = ExtResource("1_8ub3o")
 ignore_texture_size = true
 stretch_mode = 0
@@ -55,6 +57,7 @@ offset_left = 755.0
 offset_top = 47.0
 offset_right = 1005.0
 offset_bottom = 297.0
+pivot_offset = Vector2(125, 125)
 texture_normal = ExtResource("1_8ub3o")
 ignore_texture_size = true
 stretch_mode = 0
@@ -77,6 +80,7 @@ offset_left = 98.0
 offset_top = 349.0
 offset_right = 348.0
 offset_bottom = 599.0
+pivot_offset = Vector2(125, 125)
 texture_normal = ExtResource("1_8ub3o")
 ignore_texture_size = true
 stretch_mode = 0
@@ -99,6 +103,7 @@ offset_left = 476.0
 offset_top = 308.0
 offset_right = 726.0
 offset_bottom = 558.0
+pivot_offset = Vector2(125, 125)
 texture_normal = ExtResource("1_8ub3o")
 ignore_texture_size = true
 stretch_mode = 0
@@ -121,6 +126,7 @@ offset_left = 805.0
 offset_top = 347.0
 offset_right = 1055.0
 offset_bottom = 597.0
+pivot_offset = Vector2(125, 125)
 texture_normal = ExtResource("1_8ub3o")
 ignore_texture_size = true
 stretch_mode = 0
