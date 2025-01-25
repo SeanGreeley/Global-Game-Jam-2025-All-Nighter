@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://duq331wuomqal"]
+
+[ext_resource type="Script" path="res://scripts/YouDiedScene.gd" id="1_84skg"]
+
+[node name="YouDiedScene" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_84skg")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 509.0
+offset_top = 291.0
+offset_right = 593.0
+offset_bottom = 348.0
+text = "You Died"

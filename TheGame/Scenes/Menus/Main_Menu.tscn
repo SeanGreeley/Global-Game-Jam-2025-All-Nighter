@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/Main_Menu.gd" id="1_3r0gg"]
 [ext_resource type="Texture2D" uid="uid://chef6tmwb7rtm" path="res://assets/20250125_003332.jpg" id="2_qj7fy"]
-[ext_resource type="AudioStream" uid="uid://dh0bgkjl5la1e" path="res://music/Highway Focus.mp3" id="3_l4obo"]
+[ext_resource type="AudioStream" uid="uid://c4arary3bafpo" path="res://music/Highway Focus.mp3" id="3_l4obo"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3

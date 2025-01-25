@@ -21,6 +21,8 @@ func _ready():
 func _process(delta):
 	if position.length() <= 80:
 		Global.bubbleHealth -= delta*0.5
+		if Global.bubbleHealth <= 0:
+			get_tree().change_scene_to_file("res://Scenes/YouDiedScene.tscn")
 
 func hit():
 	health -= 1
@@ -31,7 +33,7 @@ func hit():
 		if randi_range(0,1) == 1:
 			var newCoin = coinScene.instantiate()
 			newCoin.position = position
-			get_tree().root.add_child(newCoin)
+			get_tree().root.call_deferred("add_child", newCoin)#get_tree().current_scene.call_deferred(“add_child”, newInstantiateObject)
 		queue_free()
 
 func _on_area_2d_body_entered(body):
