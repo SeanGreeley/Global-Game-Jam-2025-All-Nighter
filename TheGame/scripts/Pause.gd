@@ -21,6 +21,7 @@ func _on_resume_pressed():
 	
 func _on_main_menu_pressed():
 	resume()
+	Global.shopOpen = false
 	get_tree().change_scene_to_file("res://Scenes/Menus/Main_Menu.tscn")
 	
 
