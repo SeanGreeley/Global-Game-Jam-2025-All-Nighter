@@ -53,7 +53,7 @@ offset_bottom = 124.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 24
 text = "Coral Wall
-5 Coins"
+10 Coins"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -73,7 +73,7 @@ offset_bottom = 124.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 24
 text = "Stone Wall
-5 Coins"
+15 Coins"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -133,6 +133,6 @@ offset_bottom = 123.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 24
 text = "Boom Bubbles
-5 Coins"
+30 Coins"
 horizontal_alignment = 1
 vertical_alignment = 1

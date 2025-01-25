@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmmbaf77feuda"]
+
+[ext_resource type="Script" path="res://Scenes/bubble_bullet.gd" id="1_s73yq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cd6bv"]
+radius = 22.0227
+
+[node name="BubbleBullet" type="RigidBody2D"]
+script = ExtResource("1_s73yq")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -21.0
+offset_top = -19.0
+offset_right = 19.0
+offset_bottom = 21.0
+color = Color(0.309804, 1, 1, 1)
+
+[node name="Collide" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_cd6bv")
