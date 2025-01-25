@@ -1,10 +1,11 @@
-[gd_scene load_steps=12 format=3 uid="uid://cqlx2w5c5f3d8"]
+[gd_scene load_steps=13 format=3 uid="uid://cqlx2w5c5f3d8"]
 
 [ext_resource type="Script" path="res://scripts/ui.gd" id="1_6kpgc"]
-[ext_resource type="Texture2D" uid="uid://c7fcihiuhj8wd" path="res://assets/icon.svg" id="1_easf5"]
 [ext_resource type="Texture2D" uid="uid://cylaav1i33wph" path="res://assets/CoinIcon.png" id="1_u2ply"]
 [ext_resource type="Texture2D" uid="uid://t1l004b3pecg" path="res://assets/bubble.png" id="3_b5ewj"]
-[ext_resource type="Texture2D" uid="uid://bh1muum1ex36l" path="res://assets/walls_spritesheet.webp" id="4_087eo"]
+[ext_resource type="Texture2D" uid="uid://eax4ynycj2io" path="res://assets/coral_wall.png" id="4_8inr4"]
+[ext_resource type="Texture2D" uid="uid://cksyy164t81qh" path="res://assets/rock_wall.png" id="5_ew26a"]
+[ext_resource type="Texture2D" uid="uid://owwevdfmn40c" path="res://assets/driftwood_wall.png" id="6_a8p4h"]
 [ext_resource type="Texture2D" uid="uid://q5e2ermm51sm" path="res://assets/Sea_Urchin_1.png" id="6_mk574"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tshfy"]
@@ -133,7 +134,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_mjyc7")
 [node name="Sprite2D" type="Sprite2D" parent="Inv1"]
 position = Vector2(40, 40)
 scale = Vector2(0.46875, 0.46875)
-texture = ExtResource("4_087eo")
+texture = ExtResource("4_8inr4")
 
 [node name="Count" type="Label" parent="Inv1"]
 layout_mode = 0
@@ -164,7 +165,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_mjyc7")
 [node name="Sprite2D" type="Sprite2D" parent="Inv2"]
 position = Vector2(40, 40)
 scale = Vector2(0.46875, 0.46875)
-texture = ExtResource("1_easf5")
+texture = ExtResource("5_ew26a")
 
 [node name="Count" type="Label" parent="Inv2"]
 layout_mode = 0
@@ -195,7 +196,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_mjyc7")
 [node name="Sprite2D" type="Sprite2D" parent="Inv3"]
 position = Vector2(40, 40)
 scale = Vector2(0.46875, 0.46875)
-texture = ExtResource("1_easf5")
+texture = ExtResource("6_a8p4h")
 
 [node name="Count" type="Label" parent="Inv3"]
 layout_mode = 0
