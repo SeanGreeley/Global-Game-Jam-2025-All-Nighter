@@ -4,19 +4,14 @@ var millis
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
-	#position = Vector2(0,1000)
-	#Global.shopOpen = true
-	#await get_tree().create_timer(5.0).timeout
-	#Global.shopOpen = false
-
+	position = Vector2(0,-1000)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	millis = Time.get_ticks_msec()
 	if Global.shopOpen:
 		position.y += (0-position.y)/30.0
-	else:
+	elif position.y > -1000:
 		position.y += (-abs(position.y)-1)/30.0
 	for c in get_child_count():
 		get_child(c).position.y += sin(millis/500.0+c*45.2)*delta*8.0
