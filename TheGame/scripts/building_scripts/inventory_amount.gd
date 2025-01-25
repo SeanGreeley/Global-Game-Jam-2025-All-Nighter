@@ -21,7 +21,7 @@ func _input(_ev):
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and Global.inventory[0] != 0 and Global.inventory[1] != 0 and Global.inventory[2] != 0 and Global.inventory[3] != 0:
 		if !mouseButtonPressed:
 			var newWall = wall.instantiate()
-			newWall.position = get_viewport().get_mouse_position() - Vector2(576,324) #will breaknwhen placed in main scene
+			newWall.position = get_viewport().get_mouse_position() - Vector2(1280,610) #will breaknwhen placed in main scene
 			newWall.type = selectWall
 			get_tree().root.add_child(newWall)
 			mouseButtonPressed = true
