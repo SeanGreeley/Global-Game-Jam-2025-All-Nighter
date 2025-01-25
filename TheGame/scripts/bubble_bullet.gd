@@ -12,3 +12,7 @@ func _ready():
 func _physics_process(delta):
 	if global_position.length() > 10000:
 		queue_free()
+
+
+func _on_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
+	queue_free()

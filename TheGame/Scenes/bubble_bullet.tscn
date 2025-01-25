@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://sl88cljk0cwc"]
+[gd_scene load_steps=5 format=3 uid="uid://ceh47hvbrldu4"]
 
 [ext_resource type="Script" path="res://scripts/bubble_bullet.gd" id="1_2eica"]
 [ext_resource type="SpriteFrames" uid="uid://qylysvwefjeh" path="res://animation/bubblebounce.tres" id="2_ch5pi"]
@@ -11,6 +11,8 @@ radius = 15.0333
 [node name="BubbleBullet" type="RigidBody2D"]
 physics_material_override = SubResource("PhysicsMaterial_awq0v")
 gravity_scale = 0.0
+max_contacts_reported = 1
+contact_monitor = true
 script = ExtResource("1_2eica")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -18,3 +20,5 @@ sprite_frames = ExtResource("2_ch5pi")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_omhqe")
+
+[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]
