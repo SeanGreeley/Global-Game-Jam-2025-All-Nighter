@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+@export var Player = true;
+
 const speed = 300.0
 var rotation_speed = 1.5
 
