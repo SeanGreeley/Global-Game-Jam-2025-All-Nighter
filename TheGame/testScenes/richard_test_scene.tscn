@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://d2twdtsdcq0so"]
 
-[ext_resource type="PackedScene" uid="uid://cqseugeg31sr3" path="res://Scenes/shop.tscn" id="1_4rc3m"]
+[ext_resource type="PackedScene" uid="uid://bqbn7wba3afd7" path="res://Scenes/shop.tscn" id="1_4rc3m"]
 [ext_resource type="PackedScene" uid="uid://cqlx2w5c5f3d8" path="res://Scenes/ui.tscn" id="2_wp6k5"]
-[ext_resource type="PackedScene" path="res://Scenes/Menus/Pause.tscn" id="3_lritv"]
+[ext_resource type="PackedScene" uid="uid://cmuk67kkk4rji" path="res://Scenes/Menus/Pause.tscn" id="3_lritv"]
 
 [node name="RichardTestScene" type="CanvasLayer"]
 

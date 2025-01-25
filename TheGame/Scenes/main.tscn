@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://b4isfkeda6hxm"]
+[gd_scene load_steps=19 format=3 uid="uid://b4isfkeda6hxm"]
 
 [ext_resource type="Texture2D" uid="uid://whblyfkxpscu" path="res://assets/Cracked Dirt.jpg" id="1_r6q75"]
 [ext_resource type="Texture2D" uid="uid://cxhtyvpgt6sob" path="res://assets/Sand.jpg" id="2_kr6mk"]
@@ -9,6 +9,7 @@
 [ext_resource type="Script" path="res://scripts/spawner.gd" id="6_vc6kd"]
 [ext_resource type="Texture2D" uid="uid://cehr2e0nw5ma8" path="res://assets/dark_sand_tilesheet.png" id="7_a3n0i"]
 [ext_resource type="Texture2D" uid="uid://d1nyewdca75xi" path="res://assets/rock_wall_tilesheet.png" id="8_qfgcs"]
+[ext_resource type="PackedScene" uid="uid://d2twdtsdcq0so" path="res://testScenes/richard_test_scene-fix.tscn" id="10_gdjai"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2loqs"]
 resource_name = "Base Dirt"
@@ -8916,3 +8917,6 @@ position = Vector2(2, 73)
 [node name="Node2D" type="Node2D" parent="."]
 position = Vector2(816, 784)
 script = ExtResource("6_vc6kd")
+
+[node name="RichardTestScene" parent="." instance=ExtResource("10_gdjai")]
+position = Vector2(-41, -132)
