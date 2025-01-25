@@ -32,18 +32,17 @@ func _on_buy_wood_pressed():
 	Global.coinCounter -= 5
 
 
-func _on_buy_coral_pressed():
-	Global.inventory[2] += 1
+func _on_buy_stone_pressed():
+	Global.inventory[1] += 1
 	Global.coinCounter -= 10
 
-
-func _on_buy_stone_pressed():
-	Global.inventory[2] += 1
+func _on_buy_coral_pressed():
+	Global.inventory[0] += 1
 	Global.coinCounter -= 15
 
 
 func _on_buy_urchin_pressed():
-	Global.inventory[2] += 1
+	Global.inventory[3] += 1
 	Global.coinCounter -= 20
 
 
