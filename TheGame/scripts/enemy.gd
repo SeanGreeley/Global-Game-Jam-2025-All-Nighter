@@ -18,6 +18,10 @@ func _ready():
 		Global.bossHealth = health
 	add_to_group("Enemies")
 
+func _physics_process(delta):
+	if position.length() <= 80:
+		Global.bubbleHealth -= delta*0.1
+
 func hit():
 	health -= 1
 	if "isBoss" in child:
