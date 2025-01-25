@@ -1,6 +1,8 @@
 extends Node2D
 
 @export var sprite: Texture;
+@export var health: int;
+@export var speed: float;
 
 
 
