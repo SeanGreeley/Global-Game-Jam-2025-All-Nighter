@@ -6,6 +6,7 @@ var boss = load("res://Scenes/enemy_boss.tscn")
 var spawnAmount:int = 10
 var remainingWaves:int = 10
 var timerIsRunning: bool = false
+var testHealth = Global.bubbleHealth
 # Called when the node enters the scene tree for the first time.
 var spawns = [Vector2(-550, -615), Vector2(-575, -500), Vector2(-600, -150), Vector2(-600, 110), Vector2(-500, 400), Vector2(-450, 600),
 Vector2(-130, 600), Vector2(150, 550), Vector2(450, 550), Vector2(660, 400), Vector2(600, 100), Vector2(630, -200), Vector2(630, -425), 
@@ -30,6 +31,8 @@ func _spawning():
 	for i in range(spawnAmount):
 		_spawnCrabz(spawns.pick_random())
 		await get_tree().create_timer(.2).timeout
+	spawnAmount += 30
+	remainingWaves -= 1
 
 #All other waves and Shop timer
 func _process(delta):
@@ -46,7 +49,4 @@ func _process(delta):
 #First Wave
 func _ready():
 	_spawning()
-	spawnAmount += 30
-	remainingWaves -= 1
-	print(spawnAmount)
-	print(remainingWaves)
+	
