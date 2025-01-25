@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://botwj6m1vpymn"]
 
 [ext_resource type="Script" path="res://scripts/enemy.gd" id="1_socmf"]
-[ext_resource type="Texture2D" uid="uid://c7fcihiuhj8wd" path="res://assets/icon.svg" id="2_hwt75"]
+[ext_resource type="Texture2D" uid="uid://dh4n1vxaj1i8y" path="res://assets/Evil_Crab.png" id="2_ptw8d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rwbu1"]
 
@@ -11,10 +11,9 @@ collision_mask = 3
 gravity_scale = 0.0
 lock_rotation = true
 script = ExtResource("1_socmf")
-assignedSprite = ExtResource("2_hwt75")
+assignedSprite = ExtResource("2_ptw8d")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.15, 0.15)
 
 [node name="Area2D" type="Area2D" parent="."]
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://h3fgvc68vix4"]
 
 [ext_resource type="Script" path="res://scripts/Player.gd" id="1_61e8j"]
-[ext_resource type="Texture2D" uid="uid://c7fcihiuhj8wd" path="res://assets/icon.svg" id="2_r5f46"]
+[ext_resource type="Texture2D" uid="uid://blg0x0pg8suxd" path="res://assets/Ozzy.png" id="2_db748"]
 [ext_resource type="PackedScene" uid="uid://b8sqej0stu5ui" path="res://Scenes/bubble_gun.tscn" id="3_8cwx2"]
 [ext_resource type="Script" path="res://scripts/building_scripts/inventory_amount.gd" id="4_4mes7"]
 
@@ -13,7 +13,10 @@ scale = Vector2(0.36, 0.36)
 script = ExtResource("1_61e8j")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_r5f46")
+position = Vector2(-3.8147e-06, -2.77778)
+rotation = -1.5708
+scale = Vector2(3.10417, 3.10417)
+texture = ExtResource("2_db748")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_441j0")

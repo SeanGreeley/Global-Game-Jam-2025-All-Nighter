@@ -6,6 +6,7 @@
 script = ExtResource("1_1s4xd")
 
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 offset_left = 76.0
 offset_top = -12.0
 offset_right = 158.0
