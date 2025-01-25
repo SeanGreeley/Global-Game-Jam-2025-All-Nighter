@@ -14,7 +14,7 @@
 [ext_resource type="AudioStream" uid="uid://bwft8i6me56n1" path="res://music/Siren Song.mp3" id="11_i83xi"]
 [ext_resource type="AudioStream" uid="uid://4lqs5mstep0g" path="res://music/Shop Theme (by Seb Gonzalez).mp3" id="12_hbi24"]
 [ext_resource type="PackedScene" uid="uid://cqlx2w5c5f3d8" path="res://Scenes/ui.tscn" id="12_p5vpp"]
-[ext_resource type="PackedScene" uid="uid://cmuk67kkk4rji" path="res://Scenes/Menus/Pause.tscn" id="13_52tln"]
+[ext_resource type="PackedScene" path="res://Scenes/Menus/Pause.tscn" id="13_52tln"]
 [ext_resource type="Texture2D" uid="uid://t1l004b3pecg" path="res://assets/bubble.png" id="14_wvorq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2loqs"]
