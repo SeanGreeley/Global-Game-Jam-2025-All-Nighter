@@ -10,6 +10,12 @@ func _ready():
 		Sprite.set_texture(assignedSprite)
 	add_to_group("Enemies")
 
+func hit(damage: int):
+	health -= damage
+	if health <= 0:
+		remove_from_group("Enemies")
+		queue_free()
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):

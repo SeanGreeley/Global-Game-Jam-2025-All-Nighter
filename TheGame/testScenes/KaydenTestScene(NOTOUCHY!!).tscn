@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://d3tnyersimu40"]
 
-[ext_resource type="Texture2D" uid="uid://c7fcihiuhj8wd" path="res://assets/icon.svg" id="1_sjvjs"]
-[ext_resource type="Script" path="res://scripts/enemy_patherfinder.gd" id="2_sixxn"]
+[ext_resource type="Texture2D" uid="uid://c7fcihiuhj8wd" path="res://assets/icon.svg" id="1_35216"]
+[ext_resource type="Script" path="res://scripts/enemy_patherfinder.gd" id="2_vguxg"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_ndasf"]
 vertices = PackedVector2Array(731, 482, -428, 486, -427, -153, 769, -163)
@@ -28,21 +28,21 @@ format = 2
 [node name="Icon" type="Sprite2D" parent="NavigationRegion2D"]
 position = Vector2(37, 42)
 scale = Vector2(0.492188, 0.4375)
-texture = ExtResource("1_sjvjs")
+texture = ExtResource("1_35216")
 
 [node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="NavigationRegion2D/Icon"]
 
 [node name="TesterEnemy" type="Area2D" parent="."]
 position = Vector2(371, 134)
 scale = Vector2(0.296875, 0.257813)
-script = ExtResource("2_sixxn")
+script = ExtResource("2_vguxg")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="TesterEnemy"]
 
 [node name="Sprite2D" type="Sprite2D" parent="TesterEnemy"]
 position = Vector2(-707.368, -50.4242)
 scale = Vector2(0.236842, 0.287879)
-texture = ExtResource("1_sjvjs")
+texture = ExtResource("1_35216")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TesterEnemy"]
 position = Vector2(-707.368, -50.4242)
