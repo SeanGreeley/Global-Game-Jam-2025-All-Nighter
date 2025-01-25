@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://botwj6m1vpymn"]
+[gd_scene load_steps=4 format=3 uid="uid://botwj6m1vpymn"]
 
 [ext_resource type="Script" path="res://scripts/enemy.gd" id="1_socmf"]
+[ext_resource type="Texture2D" uid="uid://c7fcihiuhj8wd" path="res://assets/icon.svg" id="2_hwt75"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rwbu1"]
 
 [node name="Enemy" type="Node2D"]
 script = ExtResource("1_socmf")
+assignedSprite = ExtResource("2_hwt75")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 
