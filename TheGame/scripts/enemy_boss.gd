@@ -1,7 +1,6 @@
 extends Node2D
 
 @export var isBoss: bool = true;
-@export var player: CharacterBody2D;
 @export var parent: Node2D;#important for scoping issues
 var nottarget = Vector2(0,0)
 var target: Vector2;
@@ -11,9 +10,10 @@ func _ready():
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):#ignores colition, moves twoard player
+	var player: Vector2 = Global.playerPosition
 	if player != null:
 		if target != Vector2(0,0):
-			target = player.position;
+			target = player;
 		if position.distance_to(nottarget) < position.distance_to(target) * 0.8:
 			var temp = target
 			target = nottarget

@@ -33,6 +33,7 @@ func _spawning():
 		await get_tree().create_timer(.2).timeout
 	spawnAmount += 30
 	remainingWaves -= 1
+	Global.roundCounter += 1
 
 #All other waves and Shop timer
 func _process(delta):
@@ -44,6 +45,7 @@ func _process(delta):
 		_spawning()
 		spawnAmount += 30
 		remainingWaves -= 1
+		Global.roundCounter += 1
 		timerIsRunning = false
 
 #First Wave

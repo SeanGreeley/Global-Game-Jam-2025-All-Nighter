@@ -23,5 +23,8 @@ func _process(delta):
 		
 		
 func _on_area_2d_body_entered(body):
-	if "isEnemy" in body:
+	if "isEnemy" in body and type != 4:
+		hit()
+	if "isEnemy" in body and type == 4:
+		body.health -= 1
 		hit()
