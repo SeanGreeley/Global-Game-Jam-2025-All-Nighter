@@ -10,7 +10,7 @@ func _ready():
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):#ignores colition, moves twoard player
-	var player: Vector2 = Global.playerPosition
+	var player: Vector2 = Global.playerPosition.x
 	if player != null:
 		if target != Vector2(0,0):
 			target = player;
