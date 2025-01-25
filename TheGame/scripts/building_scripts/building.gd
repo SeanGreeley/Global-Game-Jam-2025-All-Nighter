@@ -6,6 +6,8 @@ var type = 0
 func _ready():
 	$AnimatedSprite2D.frame = type
 
+func hit():
+	health -= 1
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -16,5 +18,10 @@ func _process(delta):
 	else:
 		health = 100
 	
-	if health == 0:
+	if health <= 0:
 		queue_free()
+		
+		
+func _on_area_2d_body_entered(body):
+	if "isEnemy" in body:
+		hit()
