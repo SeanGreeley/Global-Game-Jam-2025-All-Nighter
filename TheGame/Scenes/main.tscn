@@ -8923,7 +8923,7 @@ layer_1/tile_data = PackedInt32Array(-1048590, 196611, 0, -983054, 196611, 2, -9
 position = Vector2(2, 73)
 
 [node name="Node2D" type="Node2D" parent="."]
-position = Vector2(-543, -708)
+position = Vector2(816, 784)
 script = ExtResource("6_vc6kd")
 
 [editable path="RichardTestScene"]
