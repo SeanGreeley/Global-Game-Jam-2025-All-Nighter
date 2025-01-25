@@ -143,3 +143,10 @@ text = "Boom Bubbles
 30 Coins"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[connection signal="pressed" from="BuyWood" to="." method="_on_buy_wood_pressed"]
+[connection signal="pressed" from="BuyCoral" to="." method="_on_buy_coral_pressed"]
+[connection signal="pressed" from="BuyStone" to="." method="_on_buy_stone_pressed"]
+[connection signal="pressed" from="BuyUrchin" to="." method="_on_buy_urchin_pressed"]
+[connection signal="pressed" from="BuyAcid" to="." method="_on_buy_acid_pressed"]
+[connection signal="pressed" from="BuyBoom" to="." method="_on_buy_boom_pressed"]

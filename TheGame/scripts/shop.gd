@@ -6,6 +6,8 @@ var millis
 func _ready():
 	position = Vector2(0,-1000)
 	Global.coinCounter += 100
+	$BuyAcid.visible = true
+	$BuyBoom.visible = true
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -23,3 +25,34 @@ func _process(delta):
 			get_child(c).modulate = Color(0.7,0.7,0.7,1.0)
 		else:
 			get_child(c).modulate = Color(1.0,1.0,1.0,1.0)
+
+
+func _on_buy_wood_pressed():
+	Global.inventory[2] += 1
+	Global.coinCounter -= 5
+
+
+func _on_buy_coral_pressed():
+	Global.inventory[2] += 1
+	Global.coinCounter -= 10
+
+
+func _on_buy_stone_pressed():
+	Global.inventory[2] += 1
+	Global.coinCounter -= 15
+
+
+func _on_buy_urchin_pressed():
+	Global.inventory[2] += 1
+	Global.coinCounter -= 20
+
+
+func _on_buy_acid_pressed():
+	Global.coinCounter -= 25
+	Global.hasAcid = true
+	$BuyAcid.visible = false
+
+func _on_buy_boom_pressed():
+	Global.coinCounter -= 30
+	Global.hasBoom = true
+	$BuyBoom.visible = false
