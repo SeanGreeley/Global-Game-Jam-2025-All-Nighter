@@ -1,8 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://cqlx2w5c5f3d8"]
 
 [ext_resource type="Texture2D" uid="uid://c7fcihiuhj8wd" path="res://assets/icon.svg" id="1_easf5"]
-
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_13alp"]
+[ext_resource type="Texture2D" uid="uid://cylaav1i33wph" path="res://assets/CoinIcon.png" id="1_u2ply"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tshfy"]
 bg_color = Color(0.372164, 0.128145, 0.165492, 1)
@@ -75,9 +74,9 @@ text = "x10"
 horizontal_alignment = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(1105, 44.875)
-scale = Vector2(50, 50.25)
-texture = SubResource("PlaceholderTexture2D_13alp")
+position = Vector2(1105, 45)
+scale = Vector2(0.195312, 0.195313)
+texture = ExtResource("1_u2ply")
 
 [node name="BossHealth" type="ProgressBar" parent="."]
 layout_mode = 0
