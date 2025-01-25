@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://duq331wuomqal"]
+[gd_scene load_steps=3 format=3 uid="uid://8na16ql2c5w4"]
 
 [ext_resource type="Script" path="res://scripts/YouDiedScene.gd" id="1_84skg"]
+[ext_resource type="AudioStream" uid="uid://bc8bqaguu7x4u" path="res://music/Windy Wisps.mp3" id="2_ihj77"]
 
 [node name="YouDiedScene" type="Control"]
 layout_mode = 3
@@ -14,3 +15,7 @@ offset_top = 291.0
 offset_right = 593.0
 offset_bottom = 348.0
 text = "You Died"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_ihj77")
+autoplay = true

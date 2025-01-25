@@ -28,6 +28,8 @@ func _spawnBowz(pos: Vector2 = Vector2(0,0)):
 	get_tree().root.add_child.call_deferred(newBoss)
 
 func _spawning():
+	$GameMusic.play()
+	$ShopMusic.stop()
 	for i in range(spawnAmount):
 		_spawnCrabz(spawns.pick_random())
 		await get_tree().create_timer(.2).timeout
@@ -37,8 +39,9 @@ func _process(delta):
 	if get_tree().get_nodes_in_group("Enemies").is_empty() and not timerIsRunning:
 		
 		timerIsRunning = true
-		$"../CanvasLayer/Shop".show()
 		Global.shopOpen = true
+		$GameMusic.stop()
+		$ShopMusic.play()
 		await get_tree().create_timer(15).timeout
 		spawnAmount += 30
 		remainingWaves -= 1
@@ -47,9 +50,9 @@ func _process(delta):
 		Global.shopOpen = false
 		_spawning()
 		timerIsRunning = false
-		$"../CanvasLayer/Shop".hide()
 
 #First Wave
 func _ready():
 	_spawning()
+	
 	

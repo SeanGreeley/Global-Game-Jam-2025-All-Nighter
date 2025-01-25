@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://b4isfkeda6hxm"]
+[gd_scene load_steps=26 format=3 uid="uid://b4isfkeda6hxm"]
 
 [ext_resource type="Texture2D" uid="uid://whblyfkxpscu" path="res://assets/Cracked Dirt.jpg" id="1_r6q75"]
 [ext_resource type="Texture2D" uid="uid://cxhtyvpgt6sob" path="res://assets/Sand.jpg" id="2_kr6mk"]
@@ -11,6 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://cehr2e0nw5ma8" path="res://assets/dark_sand_tilesheet.png" id="7_a3n0i"]
 [ext_resource type="Texture2D" uid="uid://d1nyewdca75xi" path="res://assets/rock_wall_tilesheet.png" id="8_qfgcs"]
 [ext_resource type="PackedScene" uid="uid://bqbn7wba3afd7" path="res://Scenes/shop.tscn" id="10_exd2k"]
+[ext_resource type="AudioStream" uid="uid://bwft8i6me56n1" path="res://music/Siren Song.mp3" id="11_i83xi"]
+[ext_resource type="AudioStream" uid="uid://4lqs5mstep0g" path="res://music/Shop Theme (by Seb Gonzalez).mp3" id="12_hbi24"]
 [ext_resource type="PackedScene" uid="uid://cqlx2w5c5f3d8" path="res://Scenes/ui.tscn" id="12_p5vpp"]
 [ext_resource type="PackedScene" uid="uid://cmuk67kkk4rji" path="res://Scenes/Menus/Pause.tscn" id="13_52tln"]
 [ext_resource type="Texture2D" uid="uid://t1l004b3pecg" path="res://assets/bubble.png" id="14_wvorq"]
@@ -8933,6 +8935,14 @@ collision_layer = 3
 [node name="Node2D" type="Node2D" parent="."]
 position = Vector2(816, 784)
 script = ExtResource("6_vc6kd")
+
+[node name="GameMusic" type="AudioStreamPlayer2D" parent="Node2D"]
+position = Vector2(-816, -784)
+stream = ExtResource("11_i83xi")
+
+[node name="ShopMusic" type="AudioStreamPlayer2D" parent="Node2D"]
+position = Vector2(-816, -784)
+stream = ExtResource("12_hbi24")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
