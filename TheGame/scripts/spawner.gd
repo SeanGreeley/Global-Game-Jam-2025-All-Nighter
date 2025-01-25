@@ -42,6 +42,7 @@ func _process(delta):
 		timerIsRunning = true
 		Global.shopOpen = true
 		await get_tree().create_timer(20).timeout
+		Global.shopOpen = false
 		_spawning()
 		spawnAmount += 30
 		remainingWaves -= 1
