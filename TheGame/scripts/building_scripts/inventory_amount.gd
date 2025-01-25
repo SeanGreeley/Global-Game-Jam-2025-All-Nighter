@@ -13,7 +13,10 @@ func _input(_ev):
 		
 	if Input.is_key_pressed(KEY_3) and Global.inventory[2] >= 1:
 		selectWall = 2
-	
+		
+	if Input.is_key_pressed(KEY_3) and Global.inventory[3] >= 1:
+		selectWall = 3
+		
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 		if !mouseButtonPressed:
 			var newWall = wall.instantiate()
