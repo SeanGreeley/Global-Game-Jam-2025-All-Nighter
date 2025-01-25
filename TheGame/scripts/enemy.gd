@@ -6,6 +6,7 @@ extends Node2D
 @export var isEnemy:bool = true;
 var child;
 var coinScene = load("res://Scenes/coin.tscn")
+var boomScene = load("res://Scenes/boom.tscn")
 
 func _ready():
 	var Sprite = get_node("Sprite2D")
@@ -32,6 +33,10 @@ func hit():
 func _on_area_2d_body_entered(body):
 	if "isBullet" in body:
 		body.health -= 1
+		if Global.hasBoom == true:
+			var newBoom = boomScene.instantiate()
+			newBoom.position = position
+			get_tree().root.add_child(newBoom)
 		if body.health == 0:
 			body.queue_free()
 		hit()
@@ -39,3 +44,8 @@ func _on_area_2d_body_entered(body):
 		Global.stunned = true
 	if "isBubble" in body:
 		pass
+
+
+func _on_area_2d_area_entered(area):
+	if "isBoom" in area:
+		hit()
