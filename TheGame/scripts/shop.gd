@@ -11,8 +11,10 @@ func _process(delta):
 	millis = Time.get_ticks_msec()
 	if Global.shopOpen:
 		position.y += (0-position.y)/30.0
-	elif position.y > -1000:
+	elif position.y > -1000 and position.y < 900:
 		position.y += (-abs(position.y)-1)/30.0
+	else:
+		position.y = 1000
 	for c in get_child_count():
 		get_child(c).position.y += sin(millis/500.0+c*45.2)*delta*8.0
 		get_child(c).scale = Vector2(1.0+sin(millis/300.0+c*87.4)*0.025,1.0-cos(millis/300.0+c*87.4)*0.025)
