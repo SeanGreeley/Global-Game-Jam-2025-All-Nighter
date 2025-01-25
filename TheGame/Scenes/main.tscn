@@ -8902,8 +8902,6 @@ sources/6 = SubResource("TileSetAtlasSource_lvlrl")
 [node name="Main" type="Node2D"]
 
 [node name="RichardTestScene_NavigationRegion2D#TileMap" type="TileMap" parent="."]
-position = Vector2(236.159, 220.508)
-scale = Vector2(0.959997, 0.832106)
 tile_set = SubResource("TileSet_62wxi")
 format = 2
 layer_0/name = "Sand Layer"
