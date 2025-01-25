@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4gjm3gvyhri1"]
+
+[ext_resource type="Script" path="res://scripts/enemy_patherfinder.gd" id="1_3vhjj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5mh6e"]
+
+[node name="enemy_crab" type="Area2D"]
+script = ExtResource("1_3vhjj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_5mh6e")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+
+[connection signal="navigation_finished" from="NavigationAgent2D" to="." method="_on_navigation_agent_2d_navigation_finished"]
