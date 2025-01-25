@@ -8,9 +8,9 @@
 [node name="Enemy" type="Node2D"]
 script = ExtResource("1_socmf")
 assignedSprite = ExtResource("2_hwt75")
+health = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.15, 0.15)
 
 [node name="Area2D" type="Area2D" parent="."]
 
