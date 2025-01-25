@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://h3fgvc68vix4"]
+[gd_scene load_steps=5 format=3 uid="uid://h3fgvc68vix4"]
 
 [ext_resource type="Script" path="res://scripts/Player.gd" id="1_4df4r"]
 [ext_resource type="Texture2D" uid="uid://c7fcihiuhj8wd" path="res://assets/icon.svg" id="2_f3kpn"]
+[ext_resource type="PackedScene" uid="uid://bqvgqwqij5gig" path="res://Scenes/bubble_gun.tscn" id="3_yw7de"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_inwe6"]
 radius = 78.0064
@@ -16,3 +17,6 @@ texture = ExtResource("2_f3kpn")
 shape = SubResource("CircleShape2D_inwe6")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="BubbleGun" parent="." instance=ExtResource("3_yw7de")]
+position = Vector2(0, 2)
