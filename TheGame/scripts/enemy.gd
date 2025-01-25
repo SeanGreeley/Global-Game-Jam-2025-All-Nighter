@@ -10,8 +10,8 @@ func _ready():
 		Sprite.set_texture(assignedSprite)
 	add_to_group("Enemies")
 
-func hit(damage: int):
-	health -= damage
+func hit():
+	health -= 1
 	if health <= 0:
 		remove_from_group("Enemies")
 		queue_free()
@@ -23,4 +23,6 @@ func _process(delta):
 
 
 func _on_area_2d_body_entered(body):
-	pass # Replace with function body.
+	if "isBullet" in body:
+		hit()
+		body.health -= 1
