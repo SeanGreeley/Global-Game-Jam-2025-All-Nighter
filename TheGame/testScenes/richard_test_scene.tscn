@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://d2twdtsdcq0so"]
+[gd_scene load_steps=5 format=3 uid="uid://d2twdtsdcq0so"]
 
 [ext_resource type="PackedScene" uid="uid://botwj6m1vpymn" path="res://Scenes/enemy.tscn" id="1_cv52c"]
-[ext_resource type="Texture2D" uid="uid://c7fcihiuhj8wd" path="res://assets/icon.svg" id="2_xd06i"]
-[ext_resource type="PackedScene" uid="uid://d4gjm3gvyhri1" path="res://Scenes/enemy_crab.tscn" id="3_ub8b6"]
+[ext_resource type="PackedScene" path="res://Scenes/enemy_crab.tscn" id="3_ub8b6"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_31n02"]
 vertices = PackedVector2Array(636, -22, 1129, 219, 734, 606, 2, 420, -60, -19, 129, -31)
@@ -21,7 +20,6 @@ navigation_polygon = SubResource("NavigationPolygon_31n02")
 
 [node name="Enemy" parent="." instance=ExtResource("1_cv52c")]
 position = Vector2(429, 143)
-assignedSprite = ExtResource("2_xd06i")
 
 [node name="enemy_crab" parent="Enemy" instance=ExtResource("3_ub8b6")]
 position = Vector2(0, -1)
@@ -30,5 +28,4 @@ position = Vector2(0, -1)
 scale = Vector2(5.27617, 5.03338)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_1lslc")
