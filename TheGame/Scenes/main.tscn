@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://d1nyewdca75xi" path="res://assets/rock_wall_tilesheet.png" id="8_qfgcs"]
 [ext_resource type="PackedScene" uid="uid://bqbn7wba3afd7" path="res://Scenes/shop.tscn" id="10_exd2k"]
 [ext_resource type="PackedScene" uid="uid://cqlx2w5c5f3d8" path="res://Scenes/ui.tscn" id="12_p5vpp"]
-[ext_resource type="PackedScene" path="res://Scenes/Menus/Pause.tscn" id="13_52tln"]
+[ext_resource type="PackedScene" uid="uid://cmuk67kkk4rji" path="res://Scenes/Menus/Pause.tscn" id="13_52tln"]
 [ext_resource type="Texture2D" uid="uid://t1l004b3pecg" path="res://assets/bubble.png" id="14_wvorq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2loqs"]

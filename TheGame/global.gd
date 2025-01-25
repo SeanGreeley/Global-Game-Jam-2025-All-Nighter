@@ -11,3 +11,16 @@ var playerPosition:Transform2D
 var hasAcid:bool = false
 var hasBoom:bool = false
 var newWaveFade:float = 1.0
+
+func resetGame():
+	bubbleHealth = 100
+	#bossHealth = 25
+	roundCounter = 1
+	coinCounter = 0
+	inventory = [0,0,0,0]
+	stunned = false
+	shopOpen = false
+	
+	hasAcid = false
+	hasBoom = false
+	newWaveFade = 1.0
