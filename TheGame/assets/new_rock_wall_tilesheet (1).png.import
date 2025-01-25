@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxhtyvpgt6sob"
-path="res://.godot/imported/Sand.jpg-6610f72ec2961da64771e808b5e4730c.ctex"
+uid="uid://x26c77t52iks"
+path="res://.godot/imported/new_rock_wall_tilesheet (1).png-debdb0068e18a4cebee9ece584f5d32a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sand.jpg"
-dest_files=["res://.godot/imported/Sand.jpg-6610f72ec2961da64771e808b5e4730c.ctex"]
+source_file="res://assets/new_rock_wall_tilesheet (1).png"
+dest_files=["res://.godot/imported/new_rock_wall_tilesheet (1).png-debdb0068e18a4cebee9ece584f5d32a.ctex"]
 
 [params]
 
