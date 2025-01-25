@@ -1,0 +1,51 @@
+[gd_scene load_steps=5 format=3 uid="uid://wned6tjub23t"]
+
+[ext_resource type="Texture2D" uid="uid://c7fcihiuhj8wd" path="res://icon.svg" id="1_sjvjs"]
+[ext_resource type="Script" path="res://scripts/enemy_patherfinder.gd" id="2_sixxn"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_ndasf"]
+vertices = PackedVector2Array(731, 482, -428, 486, -427, -153, 769, -163)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-437, -163, -439, 497, 741, 492, 780, -174)])
+source_geometry_group_name = &"navigation_polygon_source_group"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8dmje"]
+radius = 16.8421
+
+[node name="KaydenTestScene(notouchy!!)" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(164, 123)
+scale = Vector2(0.296875, 0.257813)
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+position = Vector2(20, -38)
+navigation_polygon = SubResource("NavigationPolygon_ndasf")
+
+[node name="TileMap" type="TileMap" parent="NavigationRegion2D"]
+format = 2
+
+[node name="Icon" type="Sprite2D" parent="NavigationRegion2D"]
+position = Vector2(37, 42)
+scale = Vector2(0.492188, 0.4375)
+texture = ExtResource("1_sjvjs")
+
+[node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="NavigationRegion2D/Icon"]
+
+[node name="TesterEnemy" type="Area2D" parent="."]
+position = Vector2(371, 134)
+scale = Vector2(0.296875, 0.257813)
+script = ExtResource("2_sixxn")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="TesterEnemy"]
+
+[node name="Sprite2D" type="Sprite2D" parent="TesterEnemy"]
+position = Vector2(-707.368, -50.4242)
+scale = Vector2(0.236842, 0.287879)
+texture = ExtResource("1_sjvjs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TesterEnemy"]
+position = Vector2(-707.368, -50.4242)
+shape = SubResource("CircleShape2D_8dmje")
+
+[connection signal="navigation_finished" from="TesterEnemy/NavigationAgent2D" to="TesterEnemy" method="_on_navigation_agent_2d_navigation_finished"]
