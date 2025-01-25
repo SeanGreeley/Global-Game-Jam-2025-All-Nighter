@@ -5,6 +5,7 @@ extends Node2D
 @export var speed: float = 100;
 @export var isEnemy:bool = true;
 var child;
+var coinScene = load("res://Scenes/coin.tscn")
 
 func _ready():
 	var Sprite = get_node("Sprite2D")
@@ -22,6 +23,10 @@ func hit():
 		Global.bossHealth = health
 	if health <= 0:
 		remove_from_group("Enemies")
+		if randi_range(0,1) == 1:
+			var newCoin = coinScene.instantiate()
+			newCoin.position = position
+			get_tree().root.add_child(newCoin)
 		queue_free()
 
 func _on_area_2d_body_entered(body):
