@@ -29,7 +29,7 @@ func _spawnBowz(pos: Vector2 = Vector2(0,0)):
 func _spawning():
 	for i in range(spawnAmount):
 		_spawnCrabz(spawns.pick_random())
-		await get_tree().create_timer(.05).timeout
+		await get_tree().create_timer(.2).timeout
 
 #All other waves and Shop timer
 func _process(delta):
