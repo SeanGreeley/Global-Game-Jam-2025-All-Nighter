@@ -40,7 +40,7 @@ func _process(delta):
 	if get_tree().get_nodes_in_group("Enemies").is_empty() and not timerIsRunning:
 		
 		timerIsRunning = true
-		#shop stuff
+		Global.shopOpen = true
 		await get_tree().create_timer(20).timeout
 		_spawning()
 		spawnAmount += 30
