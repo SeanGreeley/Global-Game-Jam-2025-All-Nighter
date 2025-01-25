@@ -31,9 +31,6 @@ func _spawning():
 	for i in range(spawnAmount):
 		_spawnCrabz(spawns.pick_random())
 		await get_tree().create_timer(.2).timeout
-	spawnAmount += 30
-	remainingWaves -= 1
-	Global.roundCounter += 1
 
 #All other waves and Shop timer
 func _process(delta):
@@ -42,11 +39,11 @@ func _process(delta):
 		timerIsRunning = true
 		Global.shopOpen = true
 		await get_tree().create_timer(20).timeout
-		Global.shopOpen = false
-		_spawning()
 		spawnAmount += 30
 		remainingWaves -= 1
 		Global.roundCounter += 1
+		Global.shopOpen = false
+		_spawning()
 		timerIsRunning = false
 
 #First Wave

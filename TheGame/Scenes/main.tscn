@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://b4isfkeda6hxm"]
+[gd_scene load_steps=21 format=3 uid="uid://b4isfkeda6hxm"]
 
 [ext_resource type="Texture2D" uid="uid://whblyfkxpscu" path="res://assets/Cracked Dirt.jpg" id="1_r6q75"]
 [ext_resource type="Texture2D" uid="uid://cxhtyvpgt6sob" path="res://assets/Sand.jpg" id="2_kr6mk"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://cehr2e0nw5ma8" path="res://assets/dark_sand_tilesheet.png" id="7_a3n0i"]
 [ext_resource type="Texture2D" uid="uid://d1nyewdca75xi" path="res://assets/rock_wall_tilesheet.png" id="8_qfgcs"]
 [ext_resource type="PackedScene" uid="uid://cqseugeg31sr3" path="res://Scenes/shop.tscn" id="10_exd2k"]
+[ext_resource type="PackedScene" uid="uid://cqlx2w5c5f3d8" path="res://Scenes/ui.tscn" id="12_p5vpp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2loqs"]
 resource_name = "Base Dirt"
@@ -8930,5 +8931,7 @@ script = ExtResource("6_vc6kd")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Shop" parent="CanvasLayer" instance=ExtResource("10_exd2k")]
+
+[node name="UI" parent="CanvasLayer" instance=ExtResource("12_p5vpp")]
 
 [editable path="RichardTestScene"]
