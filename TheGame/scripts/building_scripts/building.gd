@@ -10,8 +10,10 @@ func _ready():
 		health = 500
 	elif type == 1:
 		health = 250
-	else:
+	elif type == 2:
 		health = 100
+	else:
+		health = 10
 
 func hit():
 	health -= 1

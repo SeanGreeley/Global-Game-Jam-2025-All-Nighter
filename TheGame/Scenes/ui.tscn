@@ -1,9 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://cqlx2w5c5f3d8"]
+[gd_scene load_steps=12 format=3 uid="uid://cqlx2w5c5f3d8"]
 
 [ext_resource type="Script" path="res://scripts/ui.gd" id="1_6kpgc"]
 [ext_resource type="Texture2D" uid="uid://c7fcihiuhj8wd" path="res://assets/icon.svg" id="1_easf5"]
 [ext_resource type="Texture2D" uid="uid://cylaav1i33wph" path="res://assets/CoinIcon.png" id="1_u2ply"]
 [ext_resource type="Texture2D" uid="uid://t1l004b3pecg" path="res://assets/bubble.png" id="3_b5ewj"]
+[ext_resource type="Texture2D" uid="uid://bh1muum1ex36l" path="res://assets/walls_spritesheet.webp" id="4_087eo"]
+[ext_resource type="Texture2D" uid="uid://q5e2ermm51sm" path="res://assets/Sea_Urchin_1.png" id="6_mk574"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tshfy"]
 bg_color = Color(0.372164, 0.128145, 0.165492, 1)
@@ -84,6 +86,7 @@ scale = Vector2(0.195312, 0.195313)
 texture = ExtResource("1_u2ply")
 
 [node name="BossHealth" type="ProgressBar" parent="."]
+visible = false
 layout_mode = 0
 offset_left = 480.0
 offset_top = 30.0
@@ -130,7 +133,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_mjyc7")
 [node name="Sprite2D" type="Sprite2D" parent="Inv1"]
 position = Vector2(40, 40)
 scale = Vector2(0.46875, 0.46875)
-texture = ExtResource("1_easf5")
+texture = ExtResource("4_087eo")
 
 [node name="Count" type="Label" parent="Inv1"]
 layout_mode = 0
@@ -221,9 +224,9 @@ offset_bottom = 440.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_mjyc7")
 
 [node name="Sprite2D" type="Sprite2D" parent="Inv4"]
-position = Vector2(40, 40)
-scale = Vector2(0.46875, 0.46875)
-texture = ExtResource("1_easf5")
+position = Vector2(40.5001, 40.5001)
+scale = Vector2(2.34375, 2.34375)
+texture = ExtResource("6_mk574")
 
 [node name="Count" type="Label" parent="Inv4"]
 layout_mode = 0

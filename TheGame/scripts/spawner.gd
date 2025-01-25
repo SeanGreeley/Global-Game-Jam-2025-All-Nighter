@@ -39,10 +39,11 @@ func _process(delta):
 		timerIsRunning = true
 		$"../CanvasLayer/Shop".show()
 		Global.shopOpen = true
-		await get_tree().create_timer(20).timeout
+		await get_tree().create_timer(15).timeout
 		spawnAmount += 30
 		remainingWaves -= 1
 		Global.roundCounter += 1
+		Global.newWaveFade = 1.0
 		Global.shopOpen = false
 		_spawning()
 		timerIsRunning = false

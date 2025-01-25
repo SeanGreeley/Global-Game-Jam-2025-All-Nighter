@@ -1,6 +1,6 @@
 extends Node
 
-var bubbleHealth:int = 100
+var bubbleHealth:float = 100
 var bossHealth:int
 var roundCounter:int = 1
 var coinCounter:int = 0
