@@ -1,0 +1,92 @@
+[gd_scene load_steps=6 format=3 uid="uid://cqlx2w5c5f3d8"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_13alp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tshfy"]
+bg_color = Color(0.372164, 0.128145, 0.165492, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.227451, 0.0901961, 0.12549, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ukvm3"]
+bg_color = Color(0.877905, 0.314078, 0.438917, 1)
+border_blend = true
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_natg2"]
+bg_color = Color(0.0673016, 0.322241, 0.372772, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.0716271, 0.220347, 0.302535, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wsq16"]
+bg_color = Color(0.287116, 0.591462, 0.656187, 1)
+border_blend = true
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="WaveCount" type="Label" parent="."]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 186.0
+offset_bottom = 70.0
+theme_override_font_sizes/font_size = 36
+text = "WAVE 1"
+
+[node name="CoinCount" type="Label" parent="."]
+layout_mode = 0
+offset_left = 910.0
+offset_top = 20.0
+offset_right = 1070.0
+offset_bottom = 70.0
+theme_override_font_sizes/font_size = 36
+text = "x10"
+horizontal_alignment = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1105, 44.875)
+scale = Vector2(50, 50.25)
+texture = SubResource("PlaceholderTexture2D_13alp")
+
+[node name="BossHealth" type="ProgressBar" parent="."]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 30.0
+offset_right = 720.0
+offset_bottom = 60.0
+theme_override_styles/background = SubResource("StyleBoxFlat_tshfy")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ukvm3")
+value = 75.0
+show_percentage = false
+
+[node name="BubbleHealth" type="ProgressBar" parent="."]
+layout_mode = 0
+offset_left = 440.0
+offset_top = 590.0
+offset_right = 760.0
+offset_bottom = 620.0
+theme_override_styles/background = SubResource("StyleBoxFlat_natg2")
+theme_override_styles/fill = SubResource("StyleBoxFlat_wsq16")
+value = 75.0
