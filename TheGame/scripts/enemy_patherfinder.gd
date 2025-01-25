@@ -12,7 +12,6 @@ func _physics_process(delta):
 	if not finished:
 		var dir = (nav.get_next_path_position() - global_position).normalized()
 		parent.translate(dir * parent.speed * delta)
-
 #func _process(delta):
 	#nav.target_position = #PlyerPos
 

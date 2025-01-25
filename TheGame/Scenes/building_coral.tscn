@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://d3o07wl82a7e1"]
+[gd_scene load_steps=8 format=3 uid="uid://d3o07wl82a7e1"]
 
 [ext_resource type="Texture2D" uid="uid://2uvgtu6n4n78" path="res://assets/Building.png" id="1_yvgn8"]
+[ext_resource type="Script" path="res://scripts/building_scripts/building.gd" id="2_yxnqy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gy8cw"]
 atlas = ExtResource("1_yvgn8")
@@ -35,12 +36,11 @@ animations = [{
 size = Vector2(40, 40)
 
 [node name="BuildingWall" type="Node2D"]
+script = ExtResource("2_yxnqy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_kr3lf")
-frame = 2
-frame_progress = 0.928917
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(-20, -20)

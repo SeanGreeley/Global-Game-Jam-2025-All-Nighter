@@ -10,3 +10,6 @@ script = ExtResource("1_rj7r6")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 scale = Vector2(0.296875, 0.257813)
+
+[node name="Node2D2" type="Node2D" parent="."]
+position = Vector2(576, 324)
