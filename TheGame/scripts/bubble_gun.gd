@@ -8,12 +8,13 @@ var bullet = load("res://Scenes/bubble_bullet.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	viewSize = get_viewport().size
+	var viewSize = get_viewport_rect().size
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	mousePos = get_viewport().get_mouse_position()
+	mousePos = get_window().get_mouse_position()
+	viewSize = get_viewport_rect().size
 	if "rotation" in get_parent():
 		parentRotation = get_parent().rotation
 	rotation = atan2(viewSize.y/2.0-mousePos.y,viewSize.x/2.0-mousePos.x) + PI - parentRotation
