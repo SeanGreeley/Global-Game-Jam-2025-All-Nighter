@@ -8,3 +8,6 @@ var inventory:Array = [0,0,0,0]
 var stunned:bool = false
 var shopOpen:bool = false
 var playerPosition:Vector2
+var hasAcid:bool = false
+var hasBoom:bool = false
+var newWaveFade:float = 1.0

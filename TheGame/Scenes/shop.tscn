@@ -7,10 +7,10 @@
 script = ExtResource("1_jc7ss")
 
 [node name="BuyWood" type="TextureButton" parent="."]
-offset_left = 122.0
-offset_top = 66.0
-offset_right = 372.0
-offset_bottom = 316.0
+offset_left = 67.0
+offset_top = 78.0
+offset_right = 317.0
+offset_bottom = 328.0
 pivot_offset = Vector2(125, 125)
 texture_normal = ExtResource("1_8ub3o")
 ignore_texture_size = true
@@ -30,10 +30,10 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="BuyCoral" type="TextureButton" parent="."]
-offset_left = 424.0
-offset_top = 38.0
-offset_right = 674.0
-offset_bottom = 288.0
+offset_left = 761.0
+offset_top = 101.0
+offset_right = 1011.0
+offset_bottom = 351.0
 pivot_offset = Vector2(125, 125)
 texture_normal = ExtResource("1_8ub3o")
 ignore_texture_size = true
@@ -48,15 +48,15 @@ offset_bottom = 157.085
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 24
 text = "Coral Wall
-10 Coins"
+15 Coins"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="BuyStone" type="TextureButton" parent="."]
-offset_left = 755.0
-offset_top = 47.0
-offset_right = 1005.0
-offset_bottom = 297.0
+offset_left = 397.0
+offset_top = 79.0
+offset_right = 647.0
+offset_bottom = 329.0
 pivot_offset = Vector2(125, 125)
 texture_normal = ExtResource("1_8ub3o")
 ignore_texture_size = true
@@ -71,15 +71,15 @@ offset_bottom = 157.085
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 24
 text = "Stone Wall
-15 Coins"
+10 Coins"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="BuyUrchin" type="TextureButton" parent="."]
-offset_left = 98.0
-offset_top = 349.0
-offset_right = 348.0
-offset_bottom = 599.0
+offset_left = 121.0
+offset_top = 342.0
+offset_right = 371.0
+offset_bottom = 592.0
 pivot_offset = Vector2(125, 125)
 texture_normal = ExtResource("1_8ub3o")
 ignore_texture_size = true
@@ -99,10 +99,10 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="BuyAcid" type="TextureButton" parent="."]
-offset_left = 476.0
-offset_top = 308.0
-offset_right = 726.0
-offset_bottom = 558.0
+offset_left = 501.0
+offset_top = 318.0
+offset_right = 751.0
+offset_bottom = 568.0
 pivot_offset = Vector2(125, 125)
 texture_normal = ExtResource("1_8ub3o")
 ignore_texture_size = true
@@ -143,3 +143,10 @@ text = "Boom Bubbles
 30 Coins"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[connection signal="pressed" from="BuyWood" to="." method="_on_buy_wood_pressed"]
+[connection signal="pressed" from="BuyCoral" to="." method="_on_buy_coral_pressed"]
+[connection signal="pressed" from="BuyStone" to="." method="_on_buy_stone_pressed"]
+[connection signal="pressed" from="BuyUrchin" to="." method="_on_buy_urchin_pressed"]
+[connection signal="pressed" from="BuyAcid" to="." method="_on_buy_acid_pressed"]
+[connection signal="pressed" from="BuyBoom" to="." method="_on_buy_boom_pressed"]

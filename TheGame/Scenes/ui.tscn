@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://cqlx2w5c5f3d8"]
+[gd_scene load_steps=10 format=3 uid="uid://cqlx2w5c5f3d8"]
 
 [ext_resource type="Script" path="res://scripts/ui.gd" id="1_6kpgc"]
 [ext_resource type="Texture2D" uid="uid://c7fcihiuhj8wd" path="res://assets/icon.svg" id="1_easf5"]
 [ext_resource type="Texture2D" uid="uid://cylaav1i33wph" path="res://assets/CoinIcon.png" id="1_u2ply"]
+[ext_resource type="Texture2D" uid="uid://t1l004b3pecg" path="res://assets/bubble.png" id="3_b5ewj"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tshfy"]
 bg_color = Color(0.372164, 0.128145, 0.165492, 1)
@@ -62,6 +63,7 @@ offset_left = 20.0
 offset_top = 20.0
 offset_right = 186.0
 offset_bottom = 70.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 36
 text = "WAVE 1"
 
@@ -71,6 +73,7 @@ offset_left = 910.0
 offset_top = 20.0
 offset_right = 1070.0
 offset_bottom = 70.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 36
 text = "x10"
 horizontal_alignment = 2
@@ -96,6 +99,7 @@ layout_mode = 0
 offset_left = 40.0
 offset_right = 200.0
 offset_bottom = 30.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 text = "MAMA BUBS"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -111,9 +115,9 @@ theme_override_styles/fill = SubResource("StyleBoxFlat_wsq16")
 value = 75.0
 
 [node name="Sprite2D" type="Sprite2D" parent="BubbleHealth"]
-position = Vector2(-4.99998, 15)
-scale = Vector2(0.390625, 0.390625)
-texture = ExtResource("1_easf5")
+position = Vector2(1, 15)
+scale = Vector2(0.222656, 0.222656)
+texture = ExtResource("3_b5ewj")
 
 [node name="Inv1" type="Panel" parent="."]
 layout_mode = 0
@@ -236,5 +240,18 @@ layout_mode = 0
 offset_right = 30.0
 offset_bottom = 30.0
 text = "4"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="NewWave" type="Label" parent="."]
+layout_mode = 0
+offset_left = 377.0
+offset_top = 236.0
+offset_right = 827.0
+offset_bottom = 406.0
+pivot_offset = Vector2(225, 85)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 120
+text = "WAVE 1"
 horizontal_alignment = 1
 vertical_alignment = 1
