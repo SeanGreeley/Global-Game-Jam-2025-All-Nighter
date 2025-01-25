@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=2 format=3 uid="uid://crfiuxo0l7i7k"]
+=======
+[gd_scene load_steps=2 format=3 uid="uid://bqvgqwqij5gig"]
+>>>>>>> ebc5334745f7e134fe358d02ba9141a4ac3f9e25
 
 [ext_resource type="Script" path="res://scripts/bubble_gun.gd" id="1_1s4xd"]
 
@@ -7,17 +11,19 @@ position = Vector2(550, 325)
 script = ExtResource("1_1s4xd")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-offset_top = -5.0
-offset_right = 19.0
-offset_bottom = 5.0
+offset_left = 64.05
+offset_top = -6.0
+offset_right = 83.05
+offset_bottom = 4.0
+scale = Vector2(1.8, 1)
 
 [node name="ColorRect2" type="ColorRect" parent="."]
-offset_left = 19.0
-offset_top = -5.0
-offset_right = 27.0
-offset_bottom = 5.0
+offset_left = 98.05
+offset_top = -6.0
+offset_right = 106.05
+offset_bottom = 4.0
 color = Color(0.554291, 0.781324, 0.960373, 1)
 
 [node name="Tip" type="Marker2D" parent="."]
-position = Vector2(26.95, 0)
+position = Vector2(106, -1)
 gizmo_extents = 28.0

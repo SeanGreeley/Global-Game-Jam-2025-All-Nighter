@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=6 format=3 uid="uid://c3o7slqt71c1j"]
+=======
+[gd_scene load_steps=4 format=3 uid="uid://do3rcybbxqxi6"]
+>>>>>>> ebc5334745f7e134fe358d02ba9141a4ac3f9e25
 
 [ext_resource type="Script" path="res://Scenes/bubble_bullet.gd" id="1_s73yq"]
 [ext_resource type="SpriteFrames" uid="uid://qylysvwefjeh" path="res://animation/bubblebounce.tres" id="2_g78ro"]
