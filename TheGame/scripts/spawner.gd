@@ -37,6 +37,7 @@ func _process(delta):
 	if get_tree().get_nodes_in_group("Enemies").is_empty() and not timerIsRunning:
 		
 		timerIsRunning = true
+		$"../CanvasLayer/Shop".show()
 		Global.shopOpen = true
 		await get_tree().create_timer(20).timeout
 		spawnAmount += 30
@@ -45,6 +46,7 @@ func _process(delta):
 		Global.shopOpen = false
 		_spawning()
 		timerIsRunning = false
+		$"../CanvasLayer/Shop".hide()
 
 #First Wave
 func _ready():
