@@ -21,7 +21,7 @@ func hit():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if type != 3:
-		health -= 10.0 * delta
+		health -= 1.0 * delta
 	if health <= 0:
 		queue_free()
 		

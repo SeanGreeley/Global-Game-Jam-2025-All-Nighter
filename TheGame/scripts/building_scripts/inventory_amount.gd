@@ -39,8 +39,9 @@ func placeWall():
 	#newWall.rotation -= PI/2
 	#newWall.position += Vector2(50*cos(newWall.rotation+PI/2),50*sin(newWall.rotation+PI/2))
 	newWall.position = placePos
-	
+	newWall.rotation = Global.playerPosition.get_rotation()
 	newWall.type = selectWall
+	newWall.rotation -= PI/2
 	Global.inventory[selectWall] -= 1;
 	get_tree().root.add_child(newWall)
 	
