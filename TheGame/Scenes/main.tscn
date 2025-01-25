@@ -1,18 +1,14 @@
-[gd_scene load_steps=22 format=3 uid="uid://b4isfkeda6hxm"]
+[gd_scene load_steps=18 format=3 uid="uid://b4isfkeda6hxm"]
 
 [ext_resource type="Texture2D" uid="uid://whblyfkxpscu" path="res://assets/Cracked Dirt.jpg" id="1_r6q75"]
 [ext_resource type="Texture2D" uid="uid://cxhtyvpgt6sob" path="res://assets/Sand.jpg" id="2_kr6mk"]
 [ext_resource type="Texture2D" uid="uid://cq2ud6tjm6v3x" path="res://assets/Rock.jpg" id="3_usxot"]
-[ext_resource type="PackedScene" uid="uid://cb3m7dtaxxefb" path="res://Scenes/Player.tscn" id="4_mvgp6"]
-[ext_resource type="PackedScene" uid="uid://d2twdtsdcq0so" path="res://testScenes/richard_test_scene.tscn" id="5_hfm00"]
+[ext_resource type="PackedScene" uid="uid://h3fgvc68vix4" path="res://Scenes/Player.tscn" id="4_mvgp6"]
 [ext_resource type="Texture2D" uid="uid://eawp4w82d7yu" path="res://assets/rock_wall_tilesheet_noMoss.png" id="5_ts14d"]
 [ext_resource type="Texture2D" uid="uid://35lbev2p85gq" path="res://assets/sand_tilesheet.png" id="6_a4p1c"]
 [ext_resource type="Script" path="res://scripts/spawner.gd" id="6_vc6kd"]
 [ext_resource type="Texture2D" uid="uid://cehr2e0nw5ma8" path="res://assets/dark_sand_tilesheet.png" id="7_a3n0i"]
 [ext_resource type="Texture2D" uid="uid://d1nyewdca75xi" path="res://assets/rock_wall_tilesheet.png" id="8_qfgcs"]
-[ext_resource type="PackedScene" uid="uid://bqbn7wba3afd7" path="res://Scenes/shop.tscn" id="10_exd2k"]
-[ext_resource type="PackedScene" uid="uid://cqlx2w5c5f3d8" path="res://Scenes/ui.tscn" id="12_p5vpp"]
-[ext_resource type="PackedScene" path="res://Scenes/Menus/Pause.tscn" id="13_52tln"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2loqs"]
 resource_name = "Base Dirt"
@@ -8905,13 +8901,7 @@ sources/6 = SubResource("TileSetAtlasSource_lvlrl")
 
 [node name="Main" type="Node2D"]
 
-[node name="RichardTestScene" parent="." instance=ExtResource("5_hfm00")]
-position = Vector2(-1, -3)
-
-[node name="NavigationRegion2D" parent="RichardTestScene" index="0"]
-position = Vector2(-261, -246)
-
-[node name="TileMap" type="TileMap" parent="RichardTestScene/NavigationRegion2D" index="0"]
+[node name="RichardTestScene_NavigationRegion2D#TileMap" type="TileMap" parent="."]
 position = Vector2(236.159, 220.508)
 scale = Vector2(0.959997, 0.832106)
 tile_set = SubResource("TileSet_62wxi")
@@ -8928,15 +8918,3 @@ position = Vector2(2, 73)
 [node name="Node2D" type="Node2D" parent="."]
 position = Vector2(816, 784)
 script = ExtResource("6_vc6kd")
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="Shop" parent="CanvasLayer" instance=ExtResource("10_exd2k")]
-
-[node name="UI" parent="CanvasLayer" instance=ExtResource("12_p5vpp")]
-
-[node name="Pause" parent="CanvasLayer" instance=ExtResource("13_52tln")]
-visible = false
-metadata/_edit_use_anchors_ = true
-
-[editable path="RichardTestScene"]
