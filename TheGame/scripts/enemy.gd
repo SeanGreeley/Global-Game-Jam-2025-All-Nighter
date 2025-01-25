@@ -16,13 +16,9 @@ func hit():
 		remove_from_group("Enemies")
 		queue_free()
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
-
 func _on_area_2d_body_entered(body):
 	if "isBullet" in body:
-		hit()
 		body.health -= 1
+		if body.health == 0:
+			body.queue_free()
+		hit()
